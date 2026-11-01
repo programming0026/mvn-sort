@@ -14,36 +14,36 @@ public class QuickSort extends SortBase {
      * @param sup índice final
      */
     private void qs(int iNums[], int inf, int sup) {
-        int izq; 
+        int left; 
         int der;
-        int mitad;
+        int middle;
         int x;
 
-        izq = inf;
+        left = inf;
         der = sup;
-        mitad = iNums[(izq + der) / 2];
+        middle = iNums[(left + der) / 2];
         do {
-            while (iNums[izq] < mitad && izq < sup) {
-                izq++;
+            while (iNums[left] < middle && left < sup) {
+                left++;
             }
-            while (mitad < iNums[der] && der > inf) {
+            while (middle < iNums[der] && der > inf) {
                 der--;
             }
 
-            if (izq <= der) {
-                x = iNums[izq];
-                iNums[izq] = iNums[der];
+            if (left <= der) {
+                x = iNums[left];
+                iNums[left] = iNums[der];
                 iNums[der] = x;
-                izq++;
+                left++;
                 der--;
             }
 
-        } while (izq <= der);
+        } while (left <= der);
         if (inf < der) {
             qs(iNums, inf, der);
         }
-        if (izq < sup) {
-            qs(iNums, izq, sup);
+        if (left < sup) {
+            qs(iNums, left, sup);
         }
     }
 

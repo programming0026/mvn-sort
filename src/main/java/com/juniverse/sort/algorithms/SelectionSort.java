@@ -17,21 +17,21 @@ public class SelectionSort extends SortBase {
         int j;
         int temp;
         int min;
-        int indicemin;
+        int minIndex;
 
         for (i = 0; i < (nums.length - 1); i++) {
             min = nums[i];
-            indicemin = i;
+            minIndex = i;
             for (j = i + 1; j < nums.length; ++j) {
                 if (nums[j] < min) {
                     min = nums[j];
-                    indicemin = j;
+                    minIndex = j;
                 }
             }
             if (min < nums[i]) {
                 temp = nums[i];
                 nums[i] = min;
-                nums[indicemin] = temp;
+                nums[minIndex] = temp;
             }
         }
     }

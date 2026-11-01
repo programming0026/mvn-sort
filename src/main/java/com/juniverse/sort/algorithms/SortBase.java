@@ -1,11 +1,17 @@
 package com.juniverse.sort.algorithms;
 
+
+import java.util.logging.Logger;
+import com.juniverse.sort.AppLogger;
+import java.util.Arrays;
 /**
  * Clase base de los algoritmos de ordenamiento de enteros.
  *
  * @author linux
  */
 public abstract class SortBase {
+    private static final Logger LOGGER = AppLogger.get(SortBase.class);
+
 
     /**
      * Ordena el arreglo de menor a mayor.
@@ -18,9 +24,7 @@ public abstract class SortBase {
      * @param nums arreglo a mostrar
      */
     public void print(int nums[]) {
-        for (int i = 0; i < nums.length; i++) {
-            System.out.print(nums[i] + " ");
-        }
-        System.out.println();
+        LOGGER.info(Arrays.toString(nums));
+        LOGGER.info("");
     }
 }

@@ -15,15 +15,15 @@ public class ShakeSort extends SortBase {
     public void sort(int[] nums) {
         int i;
         int temp;
-        boolean inter;
+        boolean swapped;
         do {
-            inter = false;
+            swapped = false;
             for (i = nums.length - 1; i > 0; --i) {
                 if (nums[i - 1] > nums[i]) {
                     temp = nums[i - 1];
                     nums[i - 1] = nums[i];
                     nums[i] = temp;
-                    inter = true;
+                    swapped = true;
                 }
             }
             for (i = 1; i < nums.length; ++i) {
@@ -31,10 +31,10 @@ public class ShakeSort extends SortBase {
                     temp = nums[i - 1];
                     nums[i - 1] = nums[i];
                     nums[i] = temp;
-                    inter = true;
+                    swapped = true;
                 }
             }
-        } while (inter);
+        } while (swapped);
     }
 
 }

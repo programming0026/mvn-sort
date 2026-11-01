@@ -5,12 +5,15 @@ import com.juniverse.sort.algorithms.SortFactory;
 import com.juniverse.sort.algorithms.SortBase;
 import java.util.Random;
 
+import java.util.logging.Logger;
 /**
  * Ordena arreglos de 10 números aleatorios con cada algoritmo y muestra el antes y el después.
  *
  * @author linux
  */
 public class Main {
+    private static final Logger LOGGER = AppLogger.get(Main.class);
+
 
     /**
      * Punto de entrada: prueba los seis algoritmos.
@@ -63,11 +66,11 @@ public class Main {
      * @param nums datos a ordenar
      */
     private static void sort(SortBase sortBase, String text, int[] nums) {
-        System.out.println(text);
-        System.out.println("Datos introducidos:");
+        LOGGER.info(text);
+        LOGGER.info("Datos introducidos:");
         sortBase.print(nums);
         sortBase.sort(nums);
-        System.out.println("Datos ordenados: ");
+        LOGGER.info("Datos ordenados: ");
         sortBase.print(nums);
     }
 
