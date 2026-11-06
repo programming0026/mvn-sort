@@ -3,7 +3,7 @@ package com.juniverse.sort.algorithms;
 /**
  * Fábrica que crea el algoritmo de ordenamiento según {@link TypeSort}.
  *
- * @author linux
+ * @author Java Universe
  */
 public final class SortFactory {
 

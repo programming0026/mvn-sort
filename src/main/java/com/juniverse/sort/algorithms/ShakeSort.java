@@ -3,7 +3,7 @@ package com.juniverse.sort.algorithms;
 /**
  * Ordenamiento de sacudida (cocktail): burbuja que recorre el arreglo en ambos sentidos. O(n²).
  *
- * @author linux
+ * @author Java Universe
  */
 public class ShakeSort extends SortBase {
 

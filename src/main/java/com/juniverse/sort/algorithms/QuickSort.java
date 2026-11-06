@@ -3,7 +3,7 @@ package com.juniverse.sort.algorithms;
 /**
  * Quicksort: divide el arreglo alrededor de un pivote (el elemento central) y ordena cada parte. O(n log n) en promedio.
  *
- * @author linux
+ * @author Java Universe
  */
 public class QuickSort extends SortBase {
 

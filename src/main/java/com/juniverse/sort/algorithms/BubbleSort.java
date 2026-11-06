@@ -3,7 +3,7 @@ package com.juniverse.sort.algorithms;
 /**
  * Ordenamiento de burbuja: compara pares contiguos e intercambia los desordenados. O(n²).
  *
- * @author linux
+ * @author Java Universe
  */
 public class BubbleSort extends SortBase {
     

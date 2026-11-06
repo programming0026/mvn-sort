@@ -3,7 +3,7 @@ package com.juniverse.sort.algorithms;
 /**
  * Ordenamiento Shell: inserción con saltos decrecientes (9, 5, 3, 2, 1). Mejora a la inserción simple.
  *
- * @author linux
+ * @author Java Universe
  */
 public class ShellSort extends SortBase {
 

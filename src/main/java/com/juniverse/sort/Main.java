@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 /**
  * Ordena arreglos de 10 números aleatorios con cada algoritmo y muestra el antes y el después.
  *
- * @author linux
+ * @author Java Universe
  */
 public class Main {
     private static final Logger LOGGER = AppLogger.get(Main.class);

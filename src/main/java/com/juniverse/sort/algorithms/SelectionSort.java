@@ -3,7 +3,7 @@ package com.juniverse.sort.algorithms;
 /**
  * Ordenamiento por selección: busca el mínimo de lo que falta y lo coloca en su posición. O(n²).
  *
- * @author linux
+ * @author Java Universe
  */
 public class SelectionSort extends SortBase {
 

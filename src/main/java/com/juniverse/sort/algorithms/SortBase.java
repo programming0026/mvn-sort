@@ -7,7 +7,7 @@ import java.util.Arrays;
 /**
  * Clase base de los algoritmos de ordenamiento de enteros.
  *
- * @author linux
+ * @author Java Universe
  */
 public abstract class SortBase {
     private static final Logger LOGGER = AppLogger.get(SortBase.class);

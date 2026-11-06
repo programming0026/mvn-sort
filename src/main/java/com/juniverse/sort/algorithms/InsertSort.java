@@ -3,7 +3,7 @@ package com.juniverse.sort.algorithms;
 /**
  * Ordenamiento por inserción: inserta cada elemento en su lugar dentro de la parte ya ordenada. O(n²).
  *
- * @author linux
+ * @author Java Universe
  */
 public class InsertSort extends SortBase {
 
